@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="img/color_code.png" type="image/x-icon">
+</head>
+
+<body>
+    
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">RP.</a>
+            </div> 
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Home</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()"><span>Contacto</span></a></li>    
+                </ul>
+                
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>  
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/romi.jpg" alt="imagen persona">
+            </div>
+            <h1>ROMINA PLATINI</h1>
+            <h2>Estudiante de Licenciatura en Sistemas | Frontend developer</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy Romina Platini. </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Autem inventore nesciunt atque, harum natus voluptatum dolorem veniam totam, quidem suscipit aperiam. 
+            Maxime impedit deleniti, minima nobis voluptatem illum nesciunt tenetur!</p>
+
+            <div class="fila">
+                <!-- datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            29/04/1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            2323-636622
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            platini.romina@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            29/04/1999
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>
+                            Luján, BA, Argentina
+                        </li>
+                        <li>
+                            <strong>Actualidad</strong>
+                            <span>Pasante IT | AGCO</span>  
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <img src="img/iconos/musica.png" alt="" height="40px" width="auto">
+                            <span>Música</span>
+                        </div>
+                        <div class="intereses">
+                            <img src="img/iconos/viajes.png" alt="" height="40px" width="auto">
+                            <span>Viajes</span>
+                        </div>
+                        <div class="intereses">
+                            <img src="img/iconos/autocad.png" alt="" height="40px" width="auto">
+                            <span>Autocad</span>
+                        </div>
+                        <div class="intereses">
+                            <img src="img/iconos/illustrator.png" alt="" height="40px" width="auto">
+                            <span>Illustrator</span>
+                        </div>
+                        <div class="intereses">
+                            <img src="img/iconos/photoshop.png" alt="" height="40px" width="auto">
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="intereses">
+                            <img src="img/iconos/microsoft_365.png" alt="" height="40px" width="auto">
+                            <span>Office</span>
+                        </div>
+                        <div class="intereses">
+                            <img src="img/iconos/premiere.png" alt="" height="40px" width="auto">
+                            <span>Premiere</span>
+                        </div>
+                        <div class="intereses">
+                            <img src="img/iconos/sketchup.png" alt="" height="40px" width="auto">
+                            <span>Sketchup</span>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-file-arrow-down"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical skills -->
+                <div class="col">
+                    <h3>Technical skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso photoshop">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso illustrator">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Proffesional skills -->
+                <div class="col">
+                    <h3>Proffesional skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso equipo">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura en Sistemas</h4>
+                        <span class="casa">Universidad Nacional de Luján</span>
+                        <span class="fecha">2022 - actualidad</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Animi, ipsum est! Odit minus incidunt reiciendis porro sint molestiae enim fugiat 
+                        qui quod dolor. Nobis eum amet nam nisi, vero fugit.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arquitectura</h4>
+                        <span class="casa">Universidad del Salvador</span>
+                        <span class="fecha">2017-2021</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Animi, ipsum est! Odit minus incidunt reiciendis porro sint molestiae enim fugiat 
+                        qui quod dolor. Nobis eum amet nam nisi, vero fugit.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Mercado Libre</span>
+                        <span class="fecha">2023 - actualidad</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Animi, ipsum est! Odit minus incidunt reiciendis porro sint molestiae enim fugiat 
+                        qui quod dolor. Nobis eum amet nam nisi, vero fugit.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Pasante IT</h4>
+                        <span class="casa">AGCO Corporation</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Animi, ipsum est! Odit minus incidunt reiciendis porro sint molestiae enim fugiat 
+                        qui quod dolor. Nobis eum amet nam nisi, vero fugit.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/proyectos/proyecto-1.jpg" alt="proyecto 1">
+                    <div class="overlay">
+                        <h3>Proyecto 1</h3>
+                        <p>descripción</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyectos/proyecto-2.jpg" alt="proyecto 2">
+                    <div class="overlay">
+                        <h3>Proyecto 2</h3>
+                        <p>descripción</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyectos/proyecto-3.jpg" alt="proyecto 3">
+                    <div class="overlay">
+                        <h3>Proyecto 3</h3>
+                        <p>descripción</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyectos/proyecto-4.jpg" alt="proyecto 4">
+                    <div class="overlay">
+                        <h3>Proyecto 4</h3>
+                        <p>descripción</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyectos/proyecto-5.jpg" alt="proyecto 5">
+                    <div class="overlay">
+                        <h3>Proyecto 5</h3>
+                        <p>descripción</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyectos/proyecto-6.jpg" alt="proyecto 6">
+                    <div class="overlay">
+                        <h3>Proyecto 6</h3>
+                        <p>descripción</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Teléfono">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Consulta">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit">
+                        Enviar mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/mapa.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Luján Bs As
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>
+                                Teléfono: 2323 636622
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                platini.romina@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <p>&copy; Copyright 2023 Romina Platini | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
