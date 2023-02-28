@@ -14,7 +14,7 @@ html {
 
 /* MENU */
 .contenedor-header {
-    background: #1e2326;
+    background: #13312b;
     position: fixed;
     width: 100%;
     top: 0;
@@ -66,6 +66,7 @@ html {
 .contenedor-header header nav ul li a span:hover {
     background-color: #fff;
     color: #000;
+    transition: .3s ease;
 }
 .nav-responsive {
     background-color: #1cb698;
@@ -695,6 +696,15 @@ footer .arriba {
 
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px) {
+
+    .contenedor-header header nav ul li a span {
+        padding: 3px;
+        border: none;
+    }
+    .contenedor-header header nav ul li a span:hover {
+        background-color: transparent;
+    }
+
     nav {
         display: none;
     }
